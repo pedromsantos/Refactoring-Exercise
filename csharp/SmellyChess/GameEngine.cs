@@ -124,9 +124,11 @@ namespace SmellyChess
 
         public bool IsValidMove(Move move)
         {
-            return IsPlayerMovingItsOwnColoredPiece(move.From)
-                   && _chessBoard.IsValidMove(move.From.Row, move.From.Column,
-                       move.To.Row, move.To.Column);
+            var isPlayerMovingItsOwnColoredPiece = IsPlayerMovingItsOwnColoredPiece(move.From);
+            var isValidMove = _chessBoard.IsValidMove(move.From.Row, move.From.Column,
+                move.To.Row, move.To.Column);
+            
+            return isPlayerMovingItsOwnColoredPiece && isValidMove;
         }
 
         private bool IsPlayerMovingItsOwnColoredPiece(Position from) {

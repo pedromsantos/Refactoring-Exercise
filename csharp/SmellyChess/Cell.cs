@@ -5,7 +5,6 @@ namespace SmellyChess
     public class Cell
     {
         private readonly Color _color;
-        private Piece _piece;
 
         public Cell(Color color)
         {
@@ -16,17 +15,12 @@ namespace SmellyChess
         
         public bool IsEmpty()
         {
-            return _piece == null;
+            return Piece == null;
         }
         
         public void RemovePiece()
         {
-            _piece = null;
-        }
-        
-        public void SetPiece(Piece piece)
-        {
-            _piece = piece;
+            Piece = null;
         }
     }
 }

@@ -33,5 +33,23 @@ namespace ChessGameTests
 
             Assert.False(IsValidMoveHelper(fromPosition, toPosition));
         }
+        
+        [Fact]
+        public void DoNoMovementOfPieceForSecondPlayer()
+        {
+            var fromPosition = new Position(1, 0);
+            var toPosition = new Position(1, 0);
+
+            Assert.False(IsValidMoveHelper(fromPosition, toPosition));
+        }
+        
+        [Fact]
+        public void ValidateMoveOfPawnForFirstPlayer()
+        {
+            var fromPosition = new Position(6, 1);
+            var toPosition = new Position(5, 1);
+
+            Assert.True(IsValidMoveHelper(fromPosition, toPosition));
+        }
     }
 }

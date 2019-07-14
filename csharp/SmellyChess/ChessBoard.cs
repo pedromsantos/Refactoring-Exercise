@@ -1,3 +1,5 @@
+using System;
+using System.Diagnostics;
 using SmellyChess.Pieces;
 
 namespace SmellyChess
@@ -50,16 +52,23 @@ namespace SmellyChess
             
         public bool IsValidMove(int fromRow, int fromColumn, int toRow, int toColumn)
         {
-            Position from = new Position(fromRow, fromColumn);
-            Position to = new Position(toRow, toColumn);
+            var from = new Position(fromRow, fromColumn);
+            var to = new Position(toRow, toColumn);
+
+            var isMoveOutOfBounds = !(IsPositionOutOfBounds(@from) || IsPositionOutOfBounds(to));
+            var canMoveTo = (IsEmpty(to) || PieceAt(@from).Color != PieceAt(to).Color);
+            var isValidMove = PieceAt(@from).IsValidMove(@from, to);
+            var hasNoPieceInPath = HasNoPieceInPath(@from, to);
+            var isPawn = !(PieceAt(@from) is Pawn);
+            var isValidPawnMove = (isPawn || IsValidPawnMove(@from, to));
             
             return !from.Equals(to)
-                   && !(IsPositionOutOfBounds(from) || IsPositionOutOfBounds(to))
+                   && isMoveOutOfBounds
                    && !IsEmpty(from)
-                   && (IsEmpty(to) || PieceAt(from).Color != PieceAt(to).Color)
-                   && PieceAt(from).IsValidMove(from, to)
-                   && HasNoPieceInPath(from, to)
-                   && (!(PieceAt(from) is Pawn) || IsValidPawnMove(from, to));
+                   && canMoveTo
+                   && isValidMove
+                   && hasNoPieceInPath
+                   && isValidPawnMove;
         }
         
         public void MovePiece(int fromRow, int fromColumn, int toRow, int toColumn) {
@@ -73,7 +82,7 @@ namespace SmellyChess
                 CellAt(to).RemovePiece();
             }
             
-            CellAt(to).SetPiece(PieceAt(from));
+            CellAt(to).Piece = PieceAt(from);
             CellAt(from).RemovePiece();
         }
 
@@ -86,7 +95,20 @@ namespace SmellyChess
         
         private bool IsValidPawnMove(Position @from, Position to)
         {
-            return false;
+            Debug.Assert(PieceAt(from) is Pawn);
+            
+            var pawn = (Pawn) PieceAt(from);
+            var pawnColor = pawn.Color;
+            var forwardRow = from.Row + ((pawnColor == Color.BLACK) ? 1 : -1);
+            var forwardLeft = new Position(forwardRow, from.Column + (pawnColor == Color.WHITE ? -1 : 1));
+            var forwardRight = new Position(forwardRow, from.Column + (pawnColor == Color.WHITE ? 1 : -1));
+
+            var opponentPieceAtForwardLeft = !IsEmpty(forwardLeft) && PieceAt(forwardLeft).Color != pawnColor;
+            var opponentPieceAtForwardRight = !IsEmpty(forwardRight) && PieceAt(forwardRight).Color != pawnColor;
+            var atInitialPosition = from.Row == ((pawnColor == Color.BLACK) ? 1 : 6);
+
+            return pawn.IsValidMoveGivenContext(from, to, atInitialPosition, opponentPieceAtForwardLeft,
+                opponentPieceAtForwardRight);
         }
 
         private bool HasNoPieceInPath(Position @from, Position to)
@@ -118,19 +140,20 @@ namespace SmellyChess
             return true;
         }
 
-        private int CappedCompare(int toRow, int fromRow)
+        private int CappedCompare(int x, int y)
         {
-            throw new System.NotImplementedException();
+            return Math.Max(-1, Math.Min(1, x.CompareTo(y)));
         }
 
         private Position TranslatedPosition(Position @from, Direction direction)
         {
-            throw new System.NotImplementedException();
+            return new Position(from.Row + direction.RowOffset, from.Column + direction.ColumnOffset);
         }
 
         private bool IsStraightLineMove(Position @from, Position to)
         {
-            throw new System.NotImplementedException();
+            return Math.Abs(from.Row - to.Row) == Math.Abs(from.Column - to.Column)
+                   || from.Row == to.Row || from.Column == to.Column;
         }
     }
 }

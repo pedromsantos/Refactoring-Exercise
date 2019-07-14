@@ -14,7 +14,7 @@ namespace SmellyChess.Pieces
             Type = type;
         }
 
-        public bool IsValidMove(Position from, Position to)
+        public virtual bool IsValidMove(Position from, Position to)
         {
             switch (Type) {
                 case 'b':
@@ -22,8 +22,8 @@ namespace SmellyChess.Pieces
                 case 'r':
                     return from.Row == to.Row || from.Column == to.Column;
                 case 'k':
-                    int columnDiff = Math.Abs(to.Column - from.Column);
-                    int rowDiff = Math.Abs(to.Row - from.Row);
+                    var columnDiff = Math.Abs(to.Column - from.Column);
+                    var rowDiff = Math.Abs(to.Row - from.Row);
                     return (columnDiff == 2 && rowDiff == 1) || (columnDiff == 1 && rowDiff == 2);
                 case 'q':
                     return Math.Abs(from.Row - to.Row) == Math.Abs(from.Column - to.Column)

@@ -2,16 +2,33 @@ namespace SmellyChess
 {
     public class Position
     {
-        private readonly int _x;
-        private readonly int _y;
+        public int Row { get; }
+        public int Column { get; }
 
-        public Position(int x, int y)
+        public Position(int row, int column)
         {
-            _x = x;
-            _y = y;
+            Row = row;
+            Column = column;
         }
 
-        public int Row { get; set; }
-        public int Column { get; set; }
+        protected bool Equals(Position other)
+        {
+            return Row == other.Row && Column == other.Column;
+        }
+
+        public override bool Equals(object obj)
+        {
+            if (ReferenceEquals(null, obj)) return false;
+            if (ReferenceEquals(this, obj)) return true;
+            return obj.GetType() == GetType() && Equals((Position) obj);
+        }
+
+        public override int GetHashCode()
+        {
+            unchecked
+            {
+                return (Row * 397) ^ Column;
+            }
+        }
     }
 }
