@@ -2,14 +2,14 @@ namespace SmellyChess
 {
     public class Position
     {
-        public int Row { get; }
-        public int Column { get; }
-
         public Position(int row, int column)
         {
             Row = row;
             Column = column;
         }
+
+        public int Row { get; }
+        public int Column { get; }
 
         protected bool Equals(Position other)
         {

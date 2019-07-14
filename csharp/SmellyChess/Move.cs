@@ -2,9 +2,9 @@ namespace SmellyChess
 {
     public class Move
     {
-        public Move(Position @from, Position to)
+        public Move(Position from, Position to)
         {
-            From = @from;
+            From = from;
             To = to;
         }
 
