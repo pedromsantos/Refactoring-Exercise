@@ -1,8 +1,0 @@
-/Users/pedro/src/Refactoring-Exercise/csharp/RefactoredChess/bin/Debug/netcoreapp2.2/RefactoredChess.deps.json
-/Users/pedro/src/Refactoring-Exercise/csharp/RefactoredChess/bin/Debug/netcoreapp2.2/RefactoredChess.dll
-/Users/pedro/src/Refactoring-Exercise/csharp/RefactoredChess/bin/Debug/netcoreapp2.2/RefactoredChess.pdb
-/Users/pedro/src/Refactoring-Exercise/csharp/RefactoredChess/obj/Debug/netcoreapp2.2/RefactoredChess.csproj.CoreCompileInputs.cache
-/Users/pedro/src/Refactoring-Exercise/csharp/RefactoredChess/obj/Debug/netcoreapp2.2/RefactoredChess.AssemblyInfoInputs.cache
-/Users/pedro/src/Refactoring-Exercise/csharp/RefactoredChess/obj/Debug/netcoreapp2.2/RefactoredChess.AssemblyInfo.cs
-/Users/pedro/src/Refactoring-Exercise/csharp/RefactoredChess/obj/Debug/netcoreapp2.2/RefactoredChess.dll
-/Users/pedro/src/Refactoring-Exercise/csharp/RefactoredChess/obj/Debug/netcoreapp2.2/RefactoredChess.pdb

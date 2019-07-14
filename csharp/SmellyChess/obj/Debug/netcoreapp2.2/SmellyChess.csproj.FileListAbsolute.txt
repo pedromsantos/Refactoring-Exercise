@@ -1,9 +1,0 @@
-/Users/pedro/src/Refactoring-Exercise/csharp/SmellyChess/bin/Debug/netcoreapp2.2/SmellyChess.deps.json
-/Users/pedro/src/Refactoring-Exercise/csharp/SmellyChess/bin/Debug/netcoreapp2.2/SmellyChess.dll
-/Users/pedro/src/Refactoring-Exercise/csharp/SmellyChess/bin/Debug/netcoreapp2.2/SmellyChess.pdb
-/Users/pedro/src/Refactoring-Exercise/csharp/SmellyChess/obj/Debug/netcoreapp2.2/SmellyChess.csprojAssemblyReference.cache
-/Users/pedro/src/Refactoring-Exercise/csharp/SmellyChess/obj/Debug/netcoreapp2.2/SmellyChess.csproj.CoreCompileInputs.cache
-/Users/pedro/src/Refactoring-Exercise/csharp/SmellyChess/obj/Debug/netcoreapp2.2/SmellyChess.AssemblyInfoInputs.cache
-/Users/pedro/src/Refactoring-Exercise/csharp/SmellyChess/obj/Debug/netcoreapp2.2/SmellyChess.AssemblyInfo.cs
-/Users/pedro/src/Refactoring-Exercise/csharp/SmellyChess/obj/Debug/netcoreapp2.2/SmellyChess.dll
-/Users/pedro/src/Refactoring-Exercise/csharp/SmellyChess/obj/Debug/netcoreapp2.2/SmellyChess.pdb
