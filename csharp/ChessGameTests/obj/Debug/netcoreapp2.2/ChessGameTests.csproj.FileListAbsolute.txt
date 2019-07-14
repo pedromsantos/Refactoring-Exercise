@@ -1,0 +1,17 @@
+/Users/pedro/src/Refactoring-Exercise/csharp/ChessGameTests/bin/Debug/netcoreapp2.2/xunit.runner.visualstudio.dotnetcore.testadapter.dll
+/Users/pedro/src/Refactoring-Exercise/csharp/ChessGameTests/bin/Debug/netcoreapp2.2/xunit.runner.reporters.netcoreapp10.dll
+/Users/pedro/src/Refactoring-Exercise/csharp/ChessGameTests/bin/Debug/netcoreapp2.2/xunit.runner.utility.netcoreapp10.dll
+/Users/pedro/src/Refactoring-Exercise/csharp/ChessGameTests/bin/Debug/netcoreapp2.2/ChessGameTests.deps.json
+/Users/pedro/src/Refactoring-Exercise/csharp/ChessGameTests/bin/Debug/netcoreapp2.2/ChessGameTests.runtimeconfig.json
+/Users/pedro/src/Refactoring-Exercise/csharp/ChessGameTests/bin/Debug/netcoreapp2.2/ChessGameTests.runtimeconfig.dev.json
+/Users/pedro/src/Refactoring-Exercise/csharp/ChessGameTests/bin/Debug/netcoreapp2.2/ChessGameTests.dll
+/Users/pedro/src/Refactoring-Exercise/csharp/ChessGameTests/bin/Debug/netcoreapp2.2/ChessGameTests.pdb
+/Users/pedro/src/Refactoring-Exercise/csharp/ChessGameTests/bin/Debug/netcoreapp2.2/SmellyChess.dll
+/Users/pedro/src/Refactoring-Exercise/csharp/ChessGameTests/bin/Debug/netcoreapp2.2/SmellyChess.pdb
+/Users/pedro/src/Refactoring-Exercise/csharp/ChessGameTests/obj/Debug/netcoreapp2.2/ChessGameTests.csprojAssemblyReference.cache
+/Users/pedro/src/Refactoring-Exercise/csharp/ChessGameTests/obj/Debug/netcoreapp2.2/ChessGameTests.csproj.CoreCompileInputs.cache
+/Users/pedro/src/Refactoring-Exercise/csharp/ChessGameTests/obj/Debug/netcoreapp2.2/ChessGameTests.AssemblyInfoInputs.cache
+/Users/pedro/src/Refactoring-Exercise/csharp/ChessGameTests/obj/Debug/netcoreapp2.2/ChessGameTests.AssemblyInfo.cs
+/Users/pedro/src/Refactoring-Exercise/csharp/ChessGameTests/obj/Debug/netcoreapp2.2/ChessGameTests.csproj.CopyComplete
+/Users/pedro/src/Refactoring-Exercise/csharp/ChessGameTests/obj/Debug/netcoreapp2.2/ChessGameTests.dll
+/Users/pedro/src/Refactoring-Exercise/csharp/ChessGameTests/obj/Debug/netcoreapp2.2/ChessGameTests.pdb
