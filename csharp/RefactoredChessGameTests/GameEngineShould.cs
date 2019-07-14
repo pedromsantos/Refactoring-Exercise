@@ -2,7 +2,7 @@ using RefactoredChess;
 using RefactoredChess.Pieces;
 using Xunit;
 
-namespace RefactoredChessGameTests
+namespace RefactoredChessTests
 {
     public class GameEngineShould
     {
