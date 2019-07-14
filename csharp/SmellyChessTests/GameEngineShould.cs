@@ -2,7 +2,7 @@ using SmellyChess;
 using SmellyChess.Pieces;
 using Xunit;
 
-namespace ChessGameTests
+namespace SmellyChessTests
 {
     public class GameEngineShould
     {

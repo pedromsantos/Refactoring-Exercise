@@ -6,7 +6,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmellyChess", "SmellyChess\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefactoredChess", "RefactoredChess\RefactoredChess.csproj", "{A5D85359-452A-4860-B733-7F10DAE6C094}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChessGameTests", "ChessGameTests\ChessGameTests.csproj", "{676CE210-2DBB-47B1-A9C2-9534F7DB8EBA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmellyChessTests", "SmellyChessTests\SmellyChessTests.csproj", "{676CE210-2DBB-47B1-A9C2-9534F7DB8EBA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefactoredChessGameTests", "RefactoredChessGameTests\RefactoredChessGameTests.csproj", "{9F70DB0F-8684-4D2A-A75E-AFDAEAF6831C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,5 +32,9 @@ Global
 		{676CE210-2DBB-47B1-A9C2-9534F7DB8EBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{676CE210-2DBB-47B1-A9C2-9534F7DB8EBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{676CE210-2DBB-47B1-A9C2-9534F7DB8EBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F70DB0F-8684-4D2A-A75E-AFDAEAF6831C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F70DB0F-8684-4D2A-A75E-AFDAEAF6831C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F70DB0F-8684-4D2A-A75E-AFDAEAF6831C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F70DB0F-8684-4D2A-A75E-AFDAEAF6831C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
